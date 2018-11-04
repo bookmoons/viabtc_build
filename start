@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#echo 'start mysql' && sudo systemctl start mysqld
+#echo 'start redis' && sudo systemctl start redis
+#echo 'start redis-sentinel' && sudo systemctl start redis-sentinel
+echo 'start matchengine' && \
+    sudo matchengine/matchengine.exe matchengine/config.json
+echo 'start readhistory' && \
+    sudo readhistory/readhistory.exe readhistory/config.json
+echo 'start alercenter' && \
+    sudo alertcenter/alertcenter.exe alertcenter/config.json
+echo 'start accessws' && \
+    sudo accessws/accessws.exe accessws/config.json
+echo 'start accesshttp' && \
+    sudo accesshttp/accesshttp.exe accesshttp/config.json
+echo 'start marketprice' && \
+    sudo marketprice/marketprice.exe marketprice/config.json

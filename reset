@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo 'reset database'
+mysql -uroot -p'gee1bae2epa-f"oh}y1F' < reset.sql
+#sql/init_trade_history.sh

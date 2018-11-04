@@ -1,0 +1,8 @@
+#!/bin/bash
+
+( echo 'build matchengine' && cd matchengine && make )
+( echo 'build marketprice' && cd marketprice && make )
+( echo 'build readhistory' && cd readhistory && make )
+( echo 'build alertcenter' && cd alertcenter && make )
+( echo 'build accessws' && cd accessws && make )
+( echo 'build accesshttp' && cd accesshttp && make )

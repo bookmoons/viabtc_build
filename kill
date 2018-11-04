@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# matchengine
+pids=($(ps -e | grep "matchengine.exe" | awk '{print $1}'))
+for pid in "${pids[@]}"
+do
+    echo "Killing matchengine.exe $pid"
+    sudo kill -9 "$pid"
+done
+
+# marketprice
+pids=($(ps -e | grep "marketprice.exe" | awk '{print $1}'))
+for pid in "${pids[@]}"
+do
+    echo "Killing marketprice.exe $pid"
+    sudo kill -9 "$pid"
+done
+
+# readhistory
+pids=($(ps -e | grep "readhistory.exe" | awk '{print $1}'))
+for pid in "${pids[@]}"
+do
+    echo "Killing readhistory.exe $pid"
+    sudo kill -9 "$pid"
+done
+
+# alertcenter
+pids=($(ps -e | grep "alertcenter.exe" | awk '{print $1}'))
+for pid in "${pids[@]}"
+do
+    echo "Killing alertcenter.exe $pid"
+    sudo kill -9 "$pid"
+done
+
+# accessws
+pids=($(ps -e | grep "accessws.exe" | awk '{print $1}'))
+for pid in "${pids[@]}"
+do
+    echo "Killing accessws.exe $pid"
+    sudo kill -9 "$pid"
+done
+
+# accesshttp
+pids=($(ps -e | grep "accesshttp.exe" | awk '{print $1}'))
+for pid in "${pids[@]}"
+do
+    echo "Killing accesshttp.exe $pid"
+    sudo kill -9 "$pid"
+done

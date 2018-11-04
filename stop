@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo 'stop accesshttp' && sudo pkill accesshttp.exe
+echo 'stop accessws' && sudo pkill accessws.exe
+echo 'stop alertcenter' && sudo pkill alertcenter.exe
+echo 'stop readhistory' && sudo pkill readhistory.exe
+echo 'stop marketprice' && sudo pkill marketprice.exe
+echo 'stop matchengine' && sudo pkill matchengine.exe
+#echo 'stop redis-sentinel' && sudo systemctl stop redis-sentinel
+#echo 'stop redis' && sudo systemctl stop redis
+#echo 'stop mysql' && sudo systemctl stop mysqld
